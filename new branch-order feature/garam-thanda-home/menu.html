@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the Garam Thanda cafe and dhaba menu: desi breakfasts, snacks, hearty meals, chai and refreshing drinks.">
+  <title>Our Menu | Garam Thanda Café & Dhaba</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="top-strip">A little desi comfort, served fresh every day <span>✦</span></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Garam Thanda home">
+      <span class="brand-mark">G<span>&</span>T</span>
+      <span class="brand-name">GARAM <b>THANDA</b><small>CAFÉ • DHA­BA • GOOD TIMES</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a class="active" href="menu.html" aria-current="page">Our Menu</a>
+      <a href="about.html">Our Story</a>
+      <a href="order.html">Order Online</a>
+      <a class="nav-cta" href="order.html">Order now <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="menu-hero">
+      <div class="menu-hero-copy">
+        <p class="eyebrow"><span></span> FRESH FROM OUR KITCHEN</p>
+        <h1>A menu full<br>of <em>desi love.</em></h1>
+        <p class="hero-description">From a nashta that feels like home to late-night chai and chatpati snacks, there is a little something for every craving.</p>
+        <a class="button button-primary" href="#menu-list">Browse the menu <span>↓</span></a>
+      </div>
+      <div class="menu-hero-art" aria-hidden="true">
+        <div class="menu-plate">🍽️</div>
+        <span class="menu-art-note note-one">MADE WITH<br>LOVE ✳</span>
+        <span class="menu-art-note note-two">DESI<br>BY HEART</span>
+        <div class="menu-art-caption">GOOD FOOD • GOOD COMPANY</div>
+      </div>
+    </section>
+
+    <section class="menu-intro section-wrap">
+      <div class="section-kicker">PICK YOUR KIND OF COMFORT</div>
+      <div class="menu-intro-row">
+        <h2>Something for<br><span>every appetite.</span></h2>
+        <p>Take your time, explore the flavours and find your new favourite. Everything on this menu is made for good moments around the table.</p>
+      </div>
+    </section>
+
+    <section class="menu-section section-wrap" id="menu-list">
+      <div class="menu-toolbar">
+        <div>
+          <div class="section-kicker">THE GARAm THANDA MENU</div>
+          <h2>What are you <span>craving?</span></h2>
+        </div>
+        <label class="menu-search-wrap">
+          <span aria-hidden="true">⌕</span>
+          <input id="menu-search" type="search" placeholder="Search the menu..." aria-label="Search menu items">
+        </label>
+      </div>
+
+      <div class="menu-filters" role="group" aria-label="Filter menu by category">
+        <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All favourites</button>
+        <button class="filter-btn" type="button" data-filter="breakfast" aria-pressed="false">Desi nashta</button>
+        <button class="filter-btn" type="button" data-filter="snacks" aria-pressed="false">Snacks & bites</button>
+        <button class="filter-btn" type="button" data-filter="mains" aria-pressed="false">Desi meals</button>
+        <button class="filter-btn" type="button" data-filter="fastfood" aria-pressed="false">Burgers & rolls</button>
+        <button class="filter-btn" type="button" data-filter="drinks" aria-pressed="false">Chai & drinks</button>
+        <button class="filter-btn" type="button" data-filter="desserts" aria-pressed="false">Sweet treats</button>
+      </div>
+
+      <div class="menu-category-heading"><span>01</span><div><p>START THE DAY RIGHT</p><h3>Desi <em>nashta</em></h3></div></div>
+      <div class="menu-card-grid">
+        <article class="menu-item" data-category="breakfast" data-name="halwa puri"><div class="menu-item-icon">🍳</div><div class="menu-item-content"><div class="menu-item-title"><h4>Halwa Puri</h4><b>Rs. 350</b></div><p>Fluffy puris served with chana, suji halwa and a little achaar.</p><span class="item-label">A DESI CLASSIC</span></div></article>
+        <article class="menu-item" data-category="breakfast" data-name="anda paratha"><div class="menu-item-icon">🥚</div><div class="menu-item-content"><div class="menu-item-title"><h4>Anda Paratha</h4><b>Rs. 280</b></div><p>Golden flaky paratha wrapped around a spiced, fluffy egg.</p><span class="item-label">BREAKFAST FAVOURITE</span></div></article>
+        <article class="menu-item" data-category="breakfast" data-name="chanay kulcha"><div class="menu-item-icon">🫓</div><div class="menu-item-content"><div class="menu-item-title"><h4>Chanay Kulcha</h4><b>Rs. 320</b></div><p>Soft kulcha paired with flavourful, slow-cooked chana masala.</p><span class="item-label">COMFORT FOOD</span></div></article>
+        <article class="menu-item" data-category="breakfast" data-name="desi omelette toast"><div class="menu-item-icon">🍞</div><div class="menu-item-content"><div class="menu-item-title"><h4>Desi Omelette & Toast</h4><b>Rs. 250</b></div><p>Masala omelette with onion, tomato, green chilli and toast.</p><span class="item-label">LIGHT & TASTY</span></div></article>
+      </div>
+
+      <div class="menu-category-heading"><span>02</span><div><p>FOR THE MIDDAY CRAVINGS</p><h3>Snacks & <em>chatpatay bites</em></h3></div></div>
+      <div class="menu-card-grid">
+        <article class="menu-item" data-category="snacks" data-name="loaded fries"><div class="menu-item-icon">🍟</div><div class="menu-item-content"><div class="menu-item-title"><h4>Loaded Fries</h4><b>Rs. 450</b></div><p>Crispy fries topped with creamy cheese sauce and house seasoning.</p><span class="item-label">CROWD FAVOURITE</span></div></article>
+        <article class="menu-item" data-category="snacks" data-name="masala fries"><div class="menu-item-icon">🥔</div><div class="menu-item-content"><div class="menu-item-title"><h4>Masala Fries</h4><b>Rs. 280</b></div><p>Hot, crunchy fries tossed in our tangy desi masala.</p><span class="item-label">CHATPATA PICK</span></div></article>
+        <article class="menu-item" data-category="snacks" data-name="chicken samosa"><div class="menu-item-icon">🥟</div><div class="menu-item-content"><div class="menu-item-title"><h4>Chicken Samosa</h4><b>Rs. 180</b></div><p>Crisp pastry filled with a savoury, mildly spiced chicken mix.</p><span class="item-label">TEA-TIME BITE</span></div></article>
+        <article class="menu-item" data-category="snacks" data-name="dahi bhallay"><div class="menu-item-icon">🥣</div><div class="menu-item-content"><div class="menu-item-title"><h4>Dahi Bhallay</h4><b>Rs. 300</b></div><p>Soft bhallay topped with chilled yoghurt, chutneys and spices.</p><span class="item-label">SWEET & TANGY</span></div></article>
+      </div>
+
+      <div class="menu-category-heading"><span>03</span><div><p>HEARTY, HOMELY & FULL OF FLAVOUR</p><h3>Desi <em>meals</em></h3></div></div>
+      <div class="menu-card-grid">
+        <article class="menu-item" data-category="mains" data-name="chicken karahi"><div class="menu-item-icon">🍲</div><div class="menu-item-content"><div class="menu-item-title"><h4>Chicken Karahi</h4><b>Rs. 1,250</b></div><p>Traditional tomato-based karahi with ginger, green chilli and fresh coriander.</p><span class="item-label">HOUSE SPECIAL</span></div></article>
+        <article class="menu-item" data-category="mains" data-name="chicken biryani"><div class="menu-item-icon">🍛</div><div class="menu-item-content"><div class="menu-item-title"><h4>Chicken Biryani</h4><b>Rs. 420</b></div><p>Fragrant basmati rice layered with spiced chicken and whole aromatics.</p><span class="item-label">LUNCH FAVOURITE</span></div></article>
+        <article class="menu-item" data-category="mains" data-name="daal chawal"><div class="menu-item-icon">🥘</div><div class="menu-item-content"><div class="menu-item-title"><h4>Daal Chawal</h4><b>Rs. 300</b></div><p>Comforting yellow daal with steamed rice and a flavourful tarka.</p><span class="item-label">GHAR KA KHANA</span></div></article>
+        <article class="menu-item" data-category="mains" data-name="beef nihari"><div class="menu-item-icon">🍖</div><div class="menu-item-content"><div class="menu-item-title"><h4>Beef Nihari</h4><b>Rs. 650</b></div><p>Slow-cooked, rich and warming nihari finished with ginger and lemon.</p><span class="item-label">WEEKEND SPECIAL</span></div></article>
+      </div>
+
+      <div class="menu-category-heading"><span>04</span><div><p>QUICK, FILLING & DELICIOUS</p><h3>Burgers & <em>rolls</em></h3></div></div>
+      <div class="menu-card-grid">
+        <article class="menu-item" data-category="fastfood" data-name="zinger burger"><div class="menu-item-icon">🍔</div><div class="menu-item-content"><div class="menu-item-title"><h4>Zinger Burger</h4><b>Rs. 520</b></div><p>Crispy chicken fillet, fresh lettuce and creamy house sauce.</p><span class="item-label">CRUNCHY CLASSIC</span></div></article>
+        <article class="menu-item" data-category="fastfood" data-name="grilled chicken sandwich"><div class="menu-item-icon">🥪</div><div class="menu-item-content"><div class="menu-item-title"><h4>Grilled Chicken Sandwich</h4><b>Rs. 480</b></div><p>Grilled chicken, crunchy vegetables and a light creamy dressing.</p><span class="item-label">EASY FAVOURITE</span></div></article>
+        <article class="menu-item" data-category="fastfood" data-name="chicken paratha roll"><div class="menu-item-icon">🌯</div><div class="menu-item-content"><div class="menu-item-title"><h4>Chicken Paratha Roll</h4><b>Rs. 350</b></div><p>Spiced chicken wrapped in a flaky paratha with chutney and salad.</p><span class="item-label">ON-THE-GO PICK</span></div></article>
+        <article class="menu-item" data-category="fastfood" data-name="malai boti roll"><div class="menu-item-icon">🌮</div><div class="menu-item-content"><div class="menu-item-title"><h4>Malai Boti Roll</h4><b>Rs. 390</b></div><p>Tender, creamy chicken boti rolled up with fresh crunchy salad.</p><span class="item-label">CREAMY & TENDER</span></div></article>
+      </div>
+
+      <div class="menu-category-heading"><span>05</span><div><p>THE PERFECT CUP & A COOL SIP</p><h3>Chai, drinks & <em>refreshers</em></h3></div></div>
+      <div class="menu-card-grid">
+        <article class="menu-item" data-category="drinks" data-name="classic doodh patti chai"><div class="menu-item-icon">☕</div><div class="menu-item-content"><div class="menu-item-title"><h4>Classic Doodh Patti</h4><b>Rs. 150</b></div><p>Strong, milky Pakistani chai brewed the traditional way.</p><span class="item-label">CHAI O'CLOCK</span></div></article>
+        <article class="menu-item" data-category="drinks" data-name="masala chai"><div class="menu-item-icon">🫖</div><div class="menu-item-content"><div class="menu-item-title"><h4>Masala Chai</h4><b>Rs. 180</b></div><p>A warming cup of tea infused with aromatic desi spices.</p><span class="item-label">A LITTLE EXTRA WARMTH</span></div></article>
+        <article class="menu-item" data-category="drinks" data-name="fresh lemonade"><div class="menu-item-icon">🍋</div><div class="menu-item-content"><div class="menu-item-title"><h4>Fresh Lemonade</h4><b>Rs. 220</b></div><p>Freshly squeezed lemon, chilled water and just the right sweetness.</p><span class="item-label">COOL & REFRESHING</span></div></article>
+        <article class="menu-item" data-category="drinks" data-name="mint margarita"><div class="menu-item-icon">🥤</div><div class="menu-item-content"><div class="menu-item-title"><h4>Mint Margarita</h4><b>Rs. 280</b></div><p>A refreshing blend of mint, citrus and ice.</p><span class="item-label">COOL DOWN</span></div></article>
+      </div>
+
+      <div class="menu-category-heading"><span>06</span><div><p>SAVE A LITTLE ROOM FOR SOMETHING SWEET</p><h3>Sweet <em>treats</em></h3></div></div>
+      <div class="menu-card-grid">
+        <article class="menu-item" data-category="desserts" data-name="suji halwa"><div class="menu-item-icon">🍮</div><div class="menu-item-content"><div class="menu-item-title"><h4>Suji Halwa</h4><b>Rs. 180</b></div><p>Warm semolina halwa with ghee, nuts and a hint of cardamom.</p><span class="item-label">TRADITIONAL SWEET</span></div></article>
+        <article class="menu-item" data-category="desserts" data-name="gulab jamun"><div class="menu-item-icon">🍡</div><div class="menu-item-content"><div class="menu-item-title"><h4>Gulab Jamun</h4><b>Rs. 160</b></div><p>Soft, syrup-soaked milk dumplings served warm.</p><span class="item-label">SWEET LITTLE JOY</span></div></article>
+        <article class="menu-item" data-category="desserts" data-name="kheer"><div class="menu-item-icon">🍚</div><div class="menu-item-content"><div class="menu-item-title"><h4>Kheer</h4><b>Rs. 220</b></div><p>Slow-cooked creamy rice pudding with cardamom and nuts.</p><span class="item-label">HOMEMADE COMFORT</span></div></article>
+        <article class="menu-item" data-category="desserts" data-name="brownie with ice cream"><div class="menu-item-icon">🍫</div><div class="menu-item-content"><div class="menu-item-title"><h4>Brownie & Ice Cream</h4><b>Rs. 380</b></div><p>A rich chocolate brownie paired with a scoop of vanilla ice cream.</p><span class="item-label">A LITTLE INDULGENCE</span></div></article>
+      </div>
+      <p class="menu-empty" id="menu-empty" hidden>No dishes found. Try another search or category.</p>
+      <p class="menu-note">* All menu items and prices are sample content for this website project and can be edited as needed.</p>
+    </section>
+
+    <section class="menu-callout">
+      <p class="eyebrow">GOOD FOOD TASTES BETTER TOGETHER</p>
+      <h2>Found your <em>favourite?</em></h2>
+      <p>Bring your appetite, gather your people and make yourself at home.</p>
+      <div class="menu-callout-actions">
+        <button class="button button-light" id="menu-surprise-btn" type="button">Surprise me! <span>✦</span></button>
+        <a class="button button-light" href="index.html">Back to home <span>↗</span></a><a class="button button-light" href="order.html">Order online <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="index.html">GARAM <span>THANDA</span></a>
+    <p>Sweet, savoury and delightful.</p>
+    <div class="footer-bottom"><span>© 2026 Garam Thanda Café & Dhaba</span><span>Made with ♥ and a little extra spice.</span></div>
+  </footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
