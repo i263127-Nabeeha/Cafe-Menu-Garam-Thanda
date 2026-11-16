@@ -1,43 +1,101 @@
-#Nabeeha Ali Mahmud 26i-3127 SE-C LAB 11
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Cafe _Dhaba Menu</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Garam Thanda — a cosy Pakistani cafe and dhaba serving sweet, savoury and refreshing delights.">
+  <title>Garam Thanda | Cafe & Dhaba</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
-    <h1>GARAM THANDA</h1>
-    <p>Welcome to a New World of Refreshing Delights </p>
-    <p>Sweet, Savoury and Delightful</p>
+  <div class="top-strip">A little desi comfort, served fresh every day <span>✦</span></div>
 
-<h2>Top Choices</h2>
-<table>
-  <tr>
-    <th>Dishes</th>
-    <th>Contact</th>
-  </tr>
-  <tr>
-    <td>Loaded Fries</td>
-    <td>5 star</td>
- 
-  </tr>
-  <tr>
-    <td>Halwa Puri</td>
-    <td>4 star</td>
-  </tr>
-</table>
-<img src="images\food.jfif" alt="Delights">
-<button type="button" onclick="Exploremore()" >Explore More ></button> 
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Garam Thanda home">
+      <span class="brand-mark">G<span>&</span>T</span>
+      <span class="brand-name">GARAM <b>THANDA</b><small>CAFÉ • DHA­BA • GOOD TIMES</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="active" href="index.html">Home</a>
+      <a href="menu.html">Our Menu</a>
+      <a href="about.html">Our Story</a>
+      <a href="order.html">Order Online</a>
+      <a class="nav-cta" href="order.html">Order now <span>↗</span></a>
+    </nav>
+  </header>
 
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> THE DESI CAFE EXPERIENCE</p>
+        <h1>Good food.<br><em>Great mood.</em><br>Full desi feels.</h1>
+        <p class="hero-description">From chatpati bites to comforting classics and chilled delights — there's always something special waiting at our table.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#popular">Explore the menu <span>→</span></a>
+          <a class="text-link" href="#welcome">Get to know us <span>↗</span></a>
+        </div>
+        <div class="hero-note"><span class="note-star">✳</span><span><b>Made for sharing</b><small>Good taste, good company.</small></span></div>
+      </div>
+      <div class="hero-art-wrap">
+        <div class="hero-stamp">FRESH<br><b>&</b><br>DESI</div>
+        <img class="hero-art" src="food-illustration.svg" alt="Illustration of a steaming cup of chai and a plate of desi snacks">
+        <div class="art-caption"><span>01 / 03</span><span>THE TASTE OF TOGETHERNESS</span></div>
+      </div>
+    </section>
 
-<script>
-  function Exploremore () {
-    console.log("Explore More clicked");
-    window.alert("Welcome to more delights!");
-  }
-</script>
+    <section class="welcome section-wrap" id="welcome">
+      <div class="section-kicker">A PLACE TO PAUSE & ENJOY</div>
+      <div class="welcome-grid">
+        <h2>Welcome to<br><span>Garam Thanda.</span></h2>
+        <p>Some cravings call for something spicy. Some days need something sweet. And some moments are simply better with a cup of chai. We bring all those little joys together, one plate at a time.</p>
+        <button class="button button-primary story-alert-btn" id="home-alert-btn" type="button">A little chai surprise <span>✦</span></button>
+      </div>
+      <div class="welcome-rule"><span>✦</span></div>
+    </section>
 
+    <section class="popular section-wrap" id="popular">
+      <div class="section-heading">
+        <div><div class="section-kicker">STRAIGHT FROM OUR KITCHEN</div><h2>Our top <span>choices</span></h2></div>
+        <p>A little something for every kind of craving.</p>
+      </div>
+      <div class="food-grid">
+        <article class="food-card">
+          <div class="food-number">01</div>
+          <div class="food-emoji" aria-hidden="true">🍟</div>
+          <div class="food-info"><span class="food-tag">CROWD FAVOURITE</span><h3>Loaded Fries</h3><p>Crispy, cheesy and generously topped. The perfect snack to share.</p><div class="food-bottom"><span>★★★★★ <small>Fan favourite</small></span><span class="food-price">Rs. 450</span></div></div>
+        </article>
+        <article class="food-card featured-card">
+          <div class="food-number">02</div>
+          <div class="food-emoji" aria-hidden="true">🍳</div>
+          <div class="food-info"><span class="food-tag">DESI CLASSIC</span><h3>Halwa Puri</h3><p>A much-loved breakfast treat with the comfort of home in every bite.</p><div class="food-bottom"><span>★★★★☆ <small>Desi delight</small></span><span class="food-price">Rs. 350</span></div></div>
+        </article>
+        <article class="food-card">
+          <div class="food-number">03</div>
+          <div class="food-emoji" aria-hidden="true">☕</div>
+          <div class="food-info"><span class="food-tag">CHAI TIME</span><h3>Classic Chai</h3><p>Warm, milky and comforting — because every good story starts with chai.</p><div class="food-bottom"><span>★★★★★ <small>Chai o'clock</small></span><span class="food-price">Rs. 150</span></div></div>
+        </article>
+      </div>
+      <p class="menu-note">* Menu items and prices shown are sample content for this website project.</p>
+    </section>
+
+    <section class="closing-banner">
+      <div class="closing-pattern">✳</div>
+      <p class="eyebrow">YOUR TABLE IS WAITING</p>
+      <h2>Come hungry.<br><em>Leave happy.</em></h2>
+      <div class="home-closing-actions"><a class="button button-light" href="menu.html">Discover our menu <span>→</span></a><a class="button button-light" href="about.html">Read our story <span>↗</span></a><a class="button button-light" href="order.html">Order online <span>↗</span></a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="index.html">GARAM <span>THANDA</span></a>
+    <p>Sweet, savoury and delightful.</p>
+    <div class="footer-bottom"><span>© 2026 Garam Thanda Café & Dhaba</span><span>Made with ♥ and a little extra spice.</span></div>
+  </footer>
+  <div class="toast" role="status" aria-live="polite"></div>
 </body>
 </html>
-
